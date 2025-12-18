@@ -1,0 +1,116 @@
+.depos-container{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+.depos-header{
+    background: linear-gradient(135deg, #c671f7, #2d5481);
+    padding: 45px 20px 20px;
+    color: #f4f6f9;
+    text-align: center;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+.depos-header h1{
+    font-size: 32px;
+}
+
+.depos-header p{
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.search-container{
+    max-width: 600px;
+    margin:0px auto 0px;
+    padding:10px 20px;
+}
+
+.search-container input{
+    width: 100%;
+    padding:12px 16px;
+    border-radius: 8px;
+    border: 1px solid #777;
+    font-size: 14px;
+    box-shadow: 0 6px 14px rgb(0, 0, 0,0.1);
+}
+
+.search-container input:focus{
+    outline: none;
+    border-color: #e2b1ff;
+}
+
+.depos-grid{
+    max-width: 1800px;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.depos-card{
+    margin: 0px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    background-color: #ffffff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.depos-info h2{
+    font-size: 22px;
+    color: #0f3460;
+    margin: 5px;
+}
+
+.depos-info p{
+    color: #444;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.active {
+  background-color: #e8f6ef;
+  color: #1e8449;
+}
+
+.status.inactive {
+  background-color: #fdecea;
+  color: #922b21;
+}
+
+.view-depo {
+  margin-top: 18px;
+  max-height: 60%;
+  padding: 10px;
+  background-color: #0f3460;
+  border: none;
+  justify-self: end;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-depo a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+      color: #ffffff;
+}
+
+.view-depo:hover {
+  background: linear-gradient(135deg,#0f3460,#999999);
+}

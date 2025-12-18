@@ -1,1 +1,29 @@
-<p>depos works!</p>
+<div class="depos-container">
+    <div class="depos-header">
+        <h1>Depos</h1>
+        <p>Depos linked between Stores and Hubs.</p>
+        <div class="search-container">
+            <input 
+            type="text" 
+            placeholder="Search by depo name or City."
+            [(ngModel)]="searchText">
+        </div>
+    </div>
+    <div class="depos-grid">
+        <div *ngFor="let depo of filtereddepos()" class="depos-card">
+            <div class="depos-info">
+                <h2>{{depo.name}}<sub> &nbsp;<span
+                    class="status"
+                    [class.active]="depo.status === 'Active'"
+                    [class.inactive]="depo.status === 'Inactive'"
+                    >
+                    {{ depo.status }}
+                </span></sub></h2>
+                <p class="location">{{depo.city}}, {{depo.state}}</p>
+            </div>
+            
+            <button  class="view-depo"><a href="about">View Details >>></a></button>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

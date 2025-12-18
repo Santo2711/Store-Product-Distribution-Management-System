@@ -2,16 +2,17 @@
 
   <div class="hub-header">
     <h1>Distribution Hubs</h1>
-    <p>Central hubs with linked stores and depots</p>
-  </div>
-
-  <div class="search-container">
+    <p>Hubs with linked stores and depots</p>
+    <div class="search-container">
     <input
       type="text"
       placeholder="Search hub by name or city"
       [(ngModel)]="searchText"
     />
   </div>
+  </div>
+
+  
 
   <div class="hub-grid">
 
@@ -44,10 +45,10 @@
       </div>
 
       <div class="linked-section">
-        <h3>Linked Stores</h3>
+        <h3>Linked hubs</h3>
         <ul>
-          <li *ngFor="let store of hub.stores">
-            {{ store.name }} – {{ store.city }}
+          <li *ngFor="let hub of hub.linkedHubs">
+            {{ hub.name }} – {{ hub.city }}
           </li>
         </ul>
       </div>

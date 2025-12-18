@@ -11,42 +11,42 @@ export const routes: Routes = [
     {
         path:'home',
         component: Home,
-        title:'Home Page',
+        title:'Home',
     },
     {
         path:'about',
         component: About,
-        title:'About Page',
+        title:'About',
     },
     {
         path:'settings',
         component: Settings,
-        title:'Settings Page',
+        title:'Settings',
     },
     {
         path:'stores',
         loadComponent:()=>import('./stores/stores').then(m=>m.Stores),
-        title:'Stores Page',
+        title:'Stores',
     },
     {
         path:'suppliers',
         loadComponent:()=>import('./suppliers/suppliers').then(m=>m.Suppliers),
-        title:'Suppliers Page',
+        title:'Suppliers',
     },
     {
         path:'hubs',
         loadComponent:()=>import('./hubs/hubs').then(m=>m.Hubs),
-        title:'Hubs Page',
+        title:'Hubs',
     },
     {
         path:'depos',
         loadComponent:()=>import('./depos/depos').then(m=>m.Depos),
-        title:'Depos Page',
+        title:'Depos',
     },
     {
         path:'progress',
         loadComponent:()=>import('./progress/progress').then(m=>m.Progress),
-        title:'Progress Page',
+        title:'Progress',
     },
     {
         path:'**',

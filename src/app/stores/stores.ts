@@ -63,8 +63,7 @@ export class Stores {
   filteredStores() {
     return this.stores.filter(store =>
       store.name.toLowerCase().includes(this.searchText.toLowerCase()) ||
-      store.city.toLowerCase().includes(this.searchText.toLowerCase()) ||
-      store.manager.toLowerCase().includes(this.searchText.toLowerCase())
+      store.city.toLowerCase().includes(this.searchText.toLowerCase()) 
     );
   }
 

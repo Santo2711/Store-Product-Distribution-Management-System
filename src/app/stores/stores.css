@@ -1,4 +1,4 @@
-.store-wrapper {
+.store-container {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f4f6f9;
   min-height: 100vh;
@@ -8,6 +8,7 @@
   background: linear-gradient(135deg, #c671f7, #2d5481);
   color: #ffffff;
   padding: 45px 10px;
+  margin: 10px 20px;
   border-radius: 10px;
   text-align: center;
 }
@@ -25,7 +26,7 @@
 
 .search-container {
   max-width: 600px;
-  margin: 0px auto 0px;
+  margin: 10px auto 0px;
   padding: 0 10px;
 }
 
@@ -40,7 +41,7 @@
 
 .search-container input:focus {
   outline: none;
-  border-color: #1f3c88;
+  border-color: #d9acff;
 }
 
 .store-grid {
@@ -114,6 +115,24 @@
   color: #922b21;
 }
 
+.linked-section {
+  margin-top: 18px;
+}
+
+.linked-section h3 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.linked-section ul {
+  padding-left: 18px;
+}
+
+.linked-section li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
 
 .view-btn {
   margin-top: 15px;

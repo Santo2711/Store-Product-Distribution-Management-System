@@ -21,9 +21,8 @@ export class Hubs {
       manager: 'xxxxx xxxx',
       phone: '+91 xxxxx xxxxx',
       status: 'Active',
-      stores: [
-        { name: 'Store 1', city: 'Chennai' },
-        { name: 'Store 2', city: 'Chennai' }
+      linkedHubs: [
+        { name: 'Hub 2', city: 'Hyderabad' }
       ],
       depots: [
         { name: 'Depot', city: 'Chennai' }
@@ -36,9 +35,9 @@ export class Hubs {
       manager: 'xxxxx xxxx',
       phone: '+91 xxxxx xxxxx',
       status: 'Active',
-      stores: [
-        { name: 'Store 1', city: 'Hyderabad' },
-        { name: 'Store 2', city: 'Hyderabad' }
+      linkedHubs: [
+        { name: 'Hub 1', city: 'Chennai' },
+        { name: 'Hub 3', city: 'Bengaluru' }
       ],
       depots: [
         { name: 'Depot', city: 'Hyderabad' }
@@ -51,8 +50,8 @@ export class Hubs {
       manager: 'xxxxx xxxx',
       phone: '+91 xxxxx xxxxx',
       status: 'Active',
-      stores: [
-        { name: 'Store 1', city: 'Bengaluru' }
+      linkedHubs: [
+        { name: 'Hub 1', city: 'Chennai' }
       ],
       depots: [
         { name: 'Depot 1', city: 'Bengaluru' },
