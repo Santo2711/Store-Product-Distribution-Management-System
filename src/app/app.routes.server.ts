@@ -1,10 +1,12 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
+import { Trackproduct } from './Pages/progress/trackproduct/trackproduct';
 
 
 export const serverRoutes: ServerRoute[] = [
   {
-    path:'depos',
-    renderMode:RenderMode.Server
+    
+    path:'trackproduct/:id',
+    renderMode:RenderMode.Client,
   },
   {
     path: '**',
