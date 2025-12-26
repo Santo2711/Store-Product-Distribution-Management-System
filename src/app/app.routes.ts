@@ -8,6 +8,7 @@ import { Hubs } from './Pages/hubs/hubs';
 import { Depos } from './Pages/depos/depos';
 import { Progress } from './Pages/progress/progress';
 import { Trackproduct } from './Pages/progress/trackproduct/trackproduct';
+import { RenderMode } from '@angular/ssr';
 
 export const routes: Routes = [
     {
